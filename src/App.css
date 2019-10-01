@@ -1,0 +1,42 @@
+             /* Generic CSS */
+
+             * {
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              text-decoration: none!important;
+
+          }
+
+          @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+
+          :root {
+              --almost-black: #0a0a0a;
+              --light-black: #797979;
+              --almost-white: #F2F2F2;
+              --white: #ffffff;
+              --text-big: 1.3rem;
+              --text-medium: 1rem;
+              --text-prettysmall: 0.9rem;
+              --text-small: 0.8rem;
+              --text-big-mobile: 1.1rem;
+              --text-medium-mobile: 0.9rem;
+              --main-font: 'Roboto Mono', monospace;
+              --font-main-button: 1rem;
+            
+          }
+
+          html, body {
+              margin: 0;
+              background-color: var(--almost-white);
+              font-family: var(--main-font);
+              font-weight: 300;
+          }
+
+          a {
+              color: var(--almost-black);
+              opacity: 1;
+          }      
+
+          a:hover {
+              opacity: 0.6;
+          }
