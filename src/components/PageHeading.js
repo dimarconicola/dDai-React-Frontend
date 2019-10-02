@@ -1,53 +1,53 @@
-import React from 'react';
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
 
 const PageHeadingContainer = styled.span`
-                width: 80%;
-                padding: 2% 10%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
+  width: 80%;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-                @media (max-width: 800px) {
-                    width: 90%;
-                    padding: 2% 5%;
-                    text-align: justify;
-                   
+  @media (max-width: 800px) {
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
   }
 `;
 
 const Heading = styled.h1`
-                font-size: var(--text-big);
+  font-size: var(--text-big);
 
-                @media (max-width: 800px) {
-                    font-size: var(--text-big-mobile);
-                }
+  @media (max-width: 800px) {
+    font-size: var(--text-big-mobile);
+  }
 `;
 
 const SubHeading = styled.h2`
-                font-size: var(--text-medium);
-                font-weight: 300;
-                margin-top: -10px;
+  font-size: var(--text-medium);
+  font-weight: 300;
+  margin-top: -10px;
 
-                @media (max-width: 800px) {
-                    font-size: var(--text-medium-mobile);
-                    font-weight: 300;
-                    margin-top: -10px;
-                }
+  @media (max-width: 800px) {
+    font-size: var(--text-medium-mobile);
+    font-weight: 300;
+    margin-top: -10px;
+  }
 `;
 
-
-
-
-const PageHeading = (props) => {
-    return (  
+const PageHeading = props => {
+  return (
     <PageHeadingContainer>
-    <Heading>Invest now. Secure your principal. Get rewards in ETH or WBTC</Heading>
-    <SubHeading>Smart Contract will automatically rebalance your investment between different protocols in order to maximise your returns.</SubHeading>
+      <Heading>
+        Invest now. Secure your principal. Get rewards in ETH or WBTC
+      </Heading>
+      <SubHeading>
+        Smart Contract will automatically rebalance your investment between
+        different protocols in order to maximise your returns.
+      </SubHeading>
     </PageHeadingContainer>
-        );
-  }
-  
-  export default PageHeading;
+  );
+};
+
+export default PageHeading;
